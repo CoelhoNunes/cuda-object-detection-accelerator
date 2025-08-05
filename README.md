@@ -1,26 +1,50 @@
-# 🚀 CUDA Course
+## 🚀 Project Overview
 
-This repository chronicles a journey through every layer of GPU programming on NVIDIA hardware—here’s what’s been accomplished and what’s in progress:
+A comprehensive exploration of GPU programming on NVIDIA hardware. Highlights of completed work and in-progress goals:
 
-- Environment & Foundations
-    I’ve configured an Ubuntu-based workspace (with WSL or Docker fallbacks) and refreshed core C/C++ concepts to ensure a solid base for CUDA development.
+---
 
-- GPU Architecture Deep Dive
-    I’ve mapped out how threads, blocks, warps, and the memory hierarchy interact, then translated that understanding into first CUDA kernels that print “Hello, GPU!” across hundreds of threads.
+### 🔧 Environment & Foundations
+- Ubuntu-based development environment configured (WSL or Docker fallback available)  
+- Core C/C++ concepts reviewed to establish a solid CUDA programming base  
 
-- Performance Tuning & Optimization
-    I’ve benchmarked naïve implementations, introduced cache-tiling and warp-shuffle strategies, and used NVIDIA profiling tools (nvprof, Nsight) to identify and eliminate bottlenecks.
+---
 
-- Library Integrations
-    I’ve woven in cuBLAS and cuDNN for high-performance linear algebra and neural-network primitives, demonstrating end-to-end speedups in sample workloads.
+### 🧩 GPU Architecture Deep Dive
+- Threads, blocks, warps and memory hierarchies analyzed  
+- First CUDA kernels implemented, printing “Hello, GPU!” across hundreds of threads  
 
-- Modern Kernel Tools
-    I’m experimenting with Triton’s Python-friendly JIT to prototype kernels without leaving my notebooks, then packaging those kernels into custom PyTorch extensions for seamless ML integration.
+---
 
-- Capstone Project
-    I’m building a multi-layer perceptron for MNIST that runs entirely on CUDA, proving warp-level efficiency and showcasing real-world deep-learning acceleration.
+### 🚀 Performance Tuning & Optimization
+- Baseline implementations benchmarked for comparison  
+- Cache-tiling and warp-shuffle strategies applied for speed improvements  
+- NVIDIA profiling tools (nvprof, Nsight) used to locate and eliminate bottlenecks  
 
-Throughout this work, I’ve emphasized best practices—memory coalescing, 128-bit alignment, explicit data transfers—and documented every step so that others can follow along, contribute optimizations, and push the boundaries of parallel performance.
+---
+
+### 📚 Library Integrations
+- cuBLAS and cuDNN integrated for accelerated linear algebra and neural-network routines  
+- End-to-end speedups demonstrated on representative workloads  
+
+---
+
+### 🔍 Modern Kernel Tools
+- Kernels prototyped in Triton’s Python JIT directly within notebooks  
+- Custom PyTorch extensions created to seamlessly integrate low-level CUDA code  
+
+---
+
+### 🎓 Capstone Project
+- Development of a CUDA-accelerated multi-layer perceptron for MNIST  
+- Warp-level efficiency showcased to prove real-world deep-learning acceleration  
+
+---
+
+### 📝 Best Practices & Documentation
+- Memory coalescing, 128-bit alignment, and explicit data transfers adopted throughout  
+- Detailed documentation provided to ensure reproducibility and invite community contributions  
+
 
 ---
 
@@ -38,15 +62,7 @@ Throughout this work, I’ve emphasized best practices—memory coalescing, 128-
 - **Capstone Challenge**  
   Build, train, and accelerate an MLP on MNIST entirely in CUDA—proof that raw parallel power can outperform high-level frameworks.
 
----
 
-## ⚡ Quickstart
 
-1. Clone this repo  
-2. Spin up Ubuntu (native, WSL, or Docker)  
-3. Run the installer script:  
-   ```bash
-   ./setup.sh
 
----
 
