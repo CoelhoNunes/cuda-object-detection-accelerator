@@ -62,17 +62,7 @@ A comprehensive exploration of GPU programming on NVIDIA hardware. Highlights of
 - **Capstone Challenge**  
   Build, train, and accelerate an MLP on MNIST entirely in CUDA—proof that raw parallel power can outperform high-level frameworks.
 
----
 
-## ⚡ Quickstart
-
-1. Clone this repo  
-2. Spin up Ubuntu (native, WSL, or Docker)  
-3. Run the installer script:  
-   ```bash
-   ./setup.sh
-
----
 
 
 
