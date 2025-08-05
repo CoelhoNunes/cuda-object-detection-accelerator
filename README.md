@@ -1,26 +1,26 @@
-# 🚀 CUDA Course
+# 🚀 CUDA Time!
 
-This repository chronicles a journey through every layer of GPU programming on NVIDIA hardware—here’s what’s been accomplished and what’s in progress:
+This repository chronicles a journey through every layer of GPU programming on NVIDIA hardware—here’s what has been accomplished and what is in progress:
 
-- Environment & Foundations
-    I’ve configured an Ubuntu-based workspace (with WSL or Docker fallbacks) and refreshed core C/C++ concepts to ensure a solid base for CUDA development.
+Environment & Foundations
+An Ubuntu-based workspace was configured (with WSL or Docker fallbacks) and core C/C++ concepts refreshed to provide a solid base for CUDA development.
 
-- GPU Architecture Deep Dive
-    I’ve mapped out how threads, blocks, warps, and the memory hierarchy interact, then translated that understanding into first CUDA kernels that print “Hello, GPU!” across hundreds of threads.
+GPU Architecture Deep Dive
+Threads, blocks, warps, and the memory hierarchy were mapped out, then leveraged to create initial CUDA kernels that print “Hello, GPU!” from hundreds of threads.
 
-- Performance Tuning & Optimization
-    I’ve benchmarked naïve implementations, introduced cache-tiling and warp-shuffle strategies, and used NVIDIA profiling tools (nvprof, Nsight) to identify and eliminate bottlenecks.
+Performance Tuning & Optimization
+Naïve implementations were benchmarked, cache-tiling and warp-shuffle strategies introduced, and NVIDIA profiling tools (nvprof, Nsight) employed to uncover and eliminate bottlenecks.
 
-- Library Integrations
-    I’ve woven in cuBLAS and cuDNN for high-performance linear algebra and neural-network primitives, demonstrating end-to-end speedups in sample workloads.
+Library Integrations
+cuBLAS and cuDNN were integrated for high-performance linear algebra and neural-network primitives, demonstrating significant end-to-end speedups.
 
-- Modern Kernel Tools
-    I’m experimenting with Triton’s Python-friendly JIT to prototype kernels without leaving my notebooks, then packaging those kernels into custom PyTorch extensions for seamless ML integration.
+Modern Kernel Tools
+Triton’s Python-friendly JIT was used to prototype kernels directly in notebooks, followed by packaging those kernels into custom PyTorch extensions for seamless ML integration.
 
-- Capstone Project
-    I’m building a multi-layer perceptron for MNIST that runs entirely on CUDA, proving warp-level efficiency and showcasing real-world deep-learning acceleration.
+Capstone Project
+A multi-layer perceptron for MNIST is under development, running entirely on CUDA to demonstrate warp-level efficiency and real-world deep-learning acceleration.
 
-Throughout this work, I’ve emphasized best practices—memory coalescing, 128-bit alignment, explicit data transfers—and documented every step so that others can follow along, contribute optimizations, and push the boundaries of parallel performance.
+Throughout this work, emphasis has been placed on best practices—memory coalescing, 128-bit alignment, explicit data transfers—and every step has been documented so others can follow along, contribute optimizations, and push the boundaries of parallel performance.
 
 ---
 
@@ -49,4 +49,5 @@ Throughout this work, I’ve emphasized best practices—memory coalescing, 128-
    ./setup.sh
 
 ---
+
 
