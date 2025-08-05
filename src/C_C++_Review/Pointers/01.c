@@ -1,6 +1,6 @@
 #include <stdio.h> // input/output header file (for printf)
 
-// & "address of" operator
+// & "address of" operator 
 // * "dereference" operator
 
 int main() {
